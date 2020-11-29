@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -82,7 +82,7 @@ namespace DotDecption
 
         static void ShowMessageBoxERROR(string ProcName)
         {
-            MessageBox.Show( "Something is wrong with the data files for "+ ProcName + " and needs to close.  Click OK to continue and then contact your machines administrator.", "Microsoft "+ProcName.ToUpper(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show( ProcName.ToUpper() + " has expierenced a serious problem and needs to close.\nClick OK to continue and contact your machines administrator.", "Microsoft "+ProcName.ToUpper(), MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
