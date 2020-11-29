@@ -60,6 +60,14 @@ namespace DotDecption
             }
         }
 
+        static int Jitter(int jitter)
+        {
+            Random rand = new Random(jitter);
+            int j = rand.Next(3000, 60000);
+            Console.WriteLine(j);
+            return j;
+        }
+
         static void KillProc(string ProcName,int offsetTime, DateTime KillDate)
         {
             try
@@ -70,7 +78,7 @@ namespace DotDecption
                     {
                         process.Kill();
                         ShowMessageBoxERROR(ProcName);
-                        Thread.Sleep((6 + offsetTime) * 1000);
+                        Thread.Sleep(Jitter(offsetTime));
                     }
                 }
             }
