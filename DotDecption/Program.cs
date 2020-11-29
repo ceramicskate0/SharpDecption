@@ -82,7 +82,7 @@ namespace DotDecption
 
         static void ShowMessageBoxERROR(string ProcName)
         {
-            MessageBox.Show( "Something is wrong with one of the data files for "+ ProcName + " and needs to close.  Click OK to continue and then contact your machines administrator.", "Microsoft "+ProcName.ToUpper(), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show( "Something is wrong with the data files for "+ ProcName + " and needs to close.  Click OK to continue and then contact your machines administrator.", "Microsoft "+ProcName.ToUpper(), MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
