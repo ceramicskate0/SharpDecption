@@ -70,7 +70,7 @@ namespace DotDecption
                     {
                         process.Kill();
                         ShowMessageBoxERROR(ProcName);
-                        Thread.Sleep(6 + offsetTime * 1000);
+                        Thread.Sleep((6 + offsetTime) * 1000);
                     }
                 }
             }
